@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Textures</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky
+      src="oo.jpg"   ></a-sky>
+
+      <a-plane
+        id="ground"
+        src="https://th.bing.com/th/id/R.d9c465c7e49b5156a779e950f98b4432?rik=ZBj8xWvuJ6xecQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fVqjr2iR.jpg&ehk=BMccQgyriRBO3jLBb8iGGZGTND4Z1vdKx0%2b0%2fynv%2f4E%3d&risl=&pid=ImgRaw&r=0"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="20"
+        height="10"
+      ></a-plane>
+
+      <a-plane
+        id="carpet"
+        src="carpets.png"
+        position="0 0.1 0.5"
+        rotation="-90 0 0"
+        width="8"
+        height="5"
+      ></a-plane>
+
+      <a-box
+        id="wall"
+        src="https://th.bing.com/th/id/OIP.938x11ZjvmrF371XFskQbwHaEK?pid=ImgDet&rs=1"
+        position="0 6.5 -4.5"
+        width="20"
+        height="13"
+      >
+      </a-box>
+
+      <a-plane
+        id="wall-poster-left"
+        src="https://pbs.twimg.com/media/DWFdwYxVoAIzTgU.jpg:orig"
+        position="-5 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+      ></a-plane>
+
+      <a-plane
+        id="wall-poster-middle"
+        src="btsign.webp"
+        position="0 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+      ></a-plane>
+
+      <a-plane
+        id="wall-poster-right"
+        src="rightimage.jpg"
+        position="5 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+      ></a-plane>
+
+      <!-- Chair 1  -->
+      <a-cylinder
+        src="sofa.png"
+        radius="1.2"
+        position="6.5 -0.4 0"
+      >
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+          radius="0.3"
+          position="0 1 0"
+          height="1.2"
+        >
+        </a-cylinder>
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+          position="0 1.9 0"
+          rotation="0 0 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+          position="0.85 3 0"
+          rotation="90 -90 0"
+          radius="1.5"
+          height="0.2"
+        ></a-cylinder>
+      </a-cylinder>
+
+      <!-- Chair 2  -->
+
+      <a-cylinder
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+        radius="1.2"
+        position="-6.5 -0.4 0"
+      >
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+          radius="0.2"
+          position="0 1 0"
+          height="1.2"
+        >
+        </a-cylinder>
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+          position="0 1.9 0"
+          rotation="0 0 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+          position="-0.85 3 0"
+          rotation="90 -90 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+      </a-cylinder>
+
+      <!-- Dining Table -->
+      <a-box
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+        width="9"
+        height="3.5"
+        position="0 2 0"
+        rotation="90 0 0"
+        depth="0.2"
+      >
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+          height="2"
+          radius="0.2"
+          rotation="90 0 0"
+          position="-3 0 1"
+        ></a-cylinder>
+
+        <a-cylinder
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+        height="2"
+        radius="0.2"
+        rotation="90 0 0"
+        position="3 0 1"
+      ></a-cylinder>
+
+      <a-cylinder
+      src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+      height="2"
+      radius="0.2"
+      rotation="90 0 0"
+      position="-2 0 1"
+    ></a-cylinder>
+
+    <a-cylinder
+    src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+    height="2"
+    radius="0.2"
+    rotation="90 0 0"
+    position="2 0 1"
+  ></a-cylinder>
+      </a-box>
+      <a-text value="NEVER STOP LOVING YOURSELF " position="-8 10 0 " color="white" width="10" ></a-text></a-entity>
+      
+
+      <!--  --------- CAMERA --------- -->
+
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 4 15">
+      </a-camera>
+
+    </a-scene>
+    <!-- Closing scene -->
+  </body>
+</html>
+
